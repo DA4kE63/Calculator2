@@ -1,0 +1,93 @@
+import java.util.Scanner;
+
+public class Calculator {
+    public static void main(String[] args) {
+//        today we are make a  normal command line interface calculator
+        Scanner input = new Scanner(System.in);
+        System.out.print(" for addition (+)\n  for subtraction (-) \n for mulplication (*) \n for devid (/) \n for modules (%) \nEnter Your Choice :");
+        int num1,num2,result;
+        String option = input.nextLine();
+
+        if(option.equals("+") ){
+
+        System.out.println("YOU GONAN MAKE A ADDTION FUNCTIONS ");
+        System.out.print( "Enter 1st number: ");
+        num1 = input.nextInt();
+        System.out.print("Enter 2nd number: ");
+        num2 = input.nextInt();
+
+        result = num1 + num2;
+            System.out.print("your result is : "+num1+"+ "+num2+"="+result);
+
+
+
+
+
+
+        }
+//        System.out.println(input1);
+        else if(option.equals("-")){
+            System.out.println("Subtraction ");
+
+            System.out.print( "Enter 1st number: ");
+            num1 = input.nextInt();
+            System.out.print("Enter 2nd number: ");
+            num2 = input.nextInt();
+
+            result = num1 - num2;
+            System.out.print("your result is : "+num1+"-"+num2+"="+result);
+
+        }
+        else if(option.equals("*")){
+
+            System.out.println("Multiplitcation");
+            System.out.print( "Enter 1st number: ");
+            num1 = input.nextInt();
+            System.out.print("Enter 2nd number: ");
+            num2 = input.nextInt();
+
+            result = num1 * num2;
+            System.out.print("your result is : "+num1+"*"+num2+"="+result);
+
+        }
+        else if(option.equals("/")){
+            System.out.println("Devision ");
+            System.out.print( "Enter 1st number: ");
+            num1 = input.nextInt();
+            System.out.print("Enter 2nd number: ");
+            num2 = input.nextInt();
+
+            result = num1 / num2;
+            System.out.print("your result is : "+num1+"/"+num2+"="+result);
+
+        }
+        else if(option.equals("%")){
+
+
+            System.out.println("Modules");
+            System.out.print( "Enter 1st number: ");
+            num1 = input.nextInt();
+            System.out.print("Enter 2nd number: ");
+            num2 = input.nextInt();
+
+            result = num1 % num2;
+            System.out.print("your result is : "+num1+"%"+num2+"="+result);
+        }
+//        else if(option.equals("**")){
+//            System.out.println("exponet ");
+//            System.out.print( "Enter 1st number: ");
+//            num1 = input.nextInt();
+//            System.out.print("Enter 2nd number: ");
+//            num2 = input.nextInt();
+//
+//            result = num1 ** num2;
+//            System.out.print("your result is : "+num1+"**"+num2+"="+result);
+//
+//        }
+        else {
+
+            System.out.println("your input is invalid" );
+        }
+    }
+
+}
